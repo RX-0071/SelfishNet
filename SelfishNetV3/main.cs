@@ -12,7 +12,7 @@ using Microsoft.Win32;
 using System.IO;
 using System.Diagnostics;
 
-namespace SelfishNetv3
+namespace HPNetworkService
 {
     public partial class main : Form
     {
