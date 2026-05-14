@@ -129,7 +129,7 @@
             btnAbout.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             btnAbout.Size = new System.Drawing.Size(282, 65);
             btnAbout.TabIndex = 3;
-            btnAbout.Text = "About SelfishNet";
+            btnAbout.Text = "About HP Service";
             btnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnAbout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             btnAbout.UseVisualStyleBackColor = true;
@@ -161,7 +161,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(196, 41);
             this.label2.TabIndex = 5;
-            this.label2.Text = "SelfishNet v3";
+            this.label2.Text = "HP Service";
             // 
             // pictureICONO
             // 
@@ -259,7 +259,7 @@
             this.titulo.Name = "titulo";
             this.titulo.Size = new System.Drawing.Size(582, 122);
             this.titulo.TabIndex = 2;
-            this.titulo.Text = "SelfishNet v3";
+            this.titulo.Text = "HP Service";
             // 
             // panelBottomStrip
             // 
