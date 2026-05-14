@@ -1,0 +1,29 @@
+name: Auto Build EXE
+
+on:
+  push:
+    branches: [ "master", "main" ] # سيعمل الأكشن تلقائياً عند كل رفع كود (Push)
+  workflow_dispatch: # يسمح لك بتشغيله يدوياً أيضاً
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.1
+
+    - name: Restore NuGet Packages
+      run: nuget restore SelfishNetv3.sln
+
+    - name: Build Application
+      run: msbuild SelfishNetv3.sln /p:Configuration=Release
+
+    - name: Upload Finished EXE
+      uses: actions/upload-artifact@v3
+      with:
+        name: My-Modified-SelfishNet
+        path: '**/bin/Release/'
